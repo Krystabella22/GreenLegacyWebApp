@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const loginBtn = document.querySelector("#login");
 const registerBtn = document.querySelector("#register");
 const loginForm = document.querySelector(".login-form");
@@ -51,3 +52,6 @@ window.addEventListener('load', () => {
         switchForm(true);
     }
 });
+=======
+null
+>>>>>>> 039097d0beb5d307abd0b8c3780644f93e7e2927

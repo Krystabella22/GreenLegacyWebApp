@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* ====== GENERAL STYLES ====== */
@@ -204,3 +205,97 @@ footer {
     margin-top: 10px;
     color: #354e51;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Header styling */
+header {
+    position: fixed; /* Make the header fixed at the top */
+    top: 0;
+    width: 100%;
+    background-color: #354e51;
+    color: #fff;
+    padding: 22px 42px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure header stays above other content */
+    }
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    }
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    }
+.nav-btn {
+    background: #97a59e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    }  
+.nav-btn:hover {
+        background: #62726a;
+    }
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.events-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    color: #f8c0e9;
+}
+.event-listing {
+    background: #354e51;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.event-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+   
+}
+.event-details {
+    margin-bottom: 10px;
+}
+.event-description {
+    margin-bottom: 10px;
+}
+.event-registration {
+    text-align: right;
+}
+.event-regestration a {
+    text-decoration: none;
+    color: #fff;
+    background: #f8c0e9;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+footer {
+text-align: center;
+margin-top: 10px;
+color: #354e51;
+}
+>>>>>>> 039097d0beb5d307abd0b8c3780644f93e7e2927

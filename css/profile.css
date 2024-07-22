@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header styling */
+header {
+    position: fixed; /* Make the header fixed at the top */
+    top: 0;
+    width: 100%;
+    background-color: #354e51;
+    color: #fff;
+    padding: 22px 42px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure header stays above other content */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    padding: 10px 0;
+}
+
+.nav-item i {
+    margin-right: 5px; /* Add some space between the icon and text */
+    font-size: 20px; /* Adjust icon size */
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f4f4f4;
+    transition: width 0.3s;
+}
+
+.nav-item:hover::after, .nav-item.active::after {
+    width: 100%;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background: #97a59e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: #62726a;
+}
+
+/* Sidebar styling */
+#container {
+    display: flex;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 2;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Profile content styling */
+.profile-content {
+    flex: 1;
+    padding: 82px;
+    background-color: #f0f4f1;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.user-name {
+    font-size: 28px;
+    color: #354e51;
+    margin-bottom: 10px;
+}
+
+.user-details {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #354e51;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #62726a;
+}
+
+.edit-btn {
+    background: #62726a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.edit-btn:hover {
+    background: #354e51;
+}
+
+/* Notifications styling */
+.notifications {
+    margin-left: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notifications h3 {
+    font-size: 24px;
+    color: #354e51;
+    margin-bottom: 15px;
+}
+
+.notifications ul {
+    list-style: none;
+}
+
+.notifications ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Activity timeline styling */
+.activity-timeline {
+    margin-top: 20px;
+}
+
+.activity-timeline h3 {
+    font-size: 24px;
+    color: #354e51;
+    margin-bottom: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-icon {
+    font-size: 30px;
+    color: #354e51;
+    margin-right: 15px;
+}
+
+.timeline-content h4 {
+    font-size: 18px;
+    color: #354e51;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Calendar styling */
+.calendar {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

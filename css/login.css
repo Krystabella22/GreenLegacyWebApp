@@ -1,0 +1,252 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ====== BASE STYLES ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ====== HEADER STYLES ====== */
+header {
+    position: fixed; /* Fixed header at the top */
+    top: 0;
+    width: 100%;
+    background-color: #354e51;
+    color: #fff;
+    padding: 22px 42px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure header stays above other content */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background: #97a59e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: #62726a;
+}
+
+/* ====== BODY STYLES ====== */
+body {
+    background: #cddad4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    min-height: 100vh;
+    margin-top: 100px; /* Space for fixed header */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px; /* Additional margin to separate from fixed header */
+}
+
+/* ====== FORM STYLES ====== */
+.form-container {
+    display: flex;
+    width: 760px; /* Increased width to accommodate side picture */
+    height: 515px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures the rounded corners are effective */
+}
+
+/* ====== FORM COLUMN STYLES ====== */
+.form-col {
+    position: relative;
+    width: 50%; /* Half the width for the form */
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* ====== SWITCH FORM BUTTONS ====== */
+.btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.btn {
+    font-weight: 500;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.4);
+    color: #fff;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-1, .btn-2 {
+    background: #354e51;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* ====== FORM BOX STYLES ====== */
+.form-box {
+    display: flex;
+    position: absolute;
+    transform: translateX(-50%);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    transition: all 0.5s ease;
+}
+
+.form-title {
+    margin: 40px 0;
+    color: #354e51;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* ====== LOGIN FORM STYLES ====== */
+.login-form {
+    left: 50%;
+    z-index: 2;
+}
+
+/* ====== REGISTER FORM STYLES ====== */
+.register-form {
+    left: 150%;
+    z-index: 1;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.register-form .form-title {
+    margin-block: 40px 20px;
+}
+
+/* ====== FORM INPUTS STYLES ====== */
+.form-inputs {
+    width: 100%;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px; /* Add spacing between input boxes */
+}
+
+.inputs {
+    width: 100%;
+    height: 55px;
+    padding: 0 20px;
+    color: #111111;
+    margin: 10px 0;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.4);
+    outline: none;
+}
+
+::placeholder {
+    color: #555555;
+    font-size: 15px;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #333333;
+    width: 17px;
+    height: 17px;
+}
+
+.input-field {
+    font-size: 16px;
+    padding: 0 40px 0 20px;
+    background: rgba(255, 255, 255, 0.4);
+    outline: none;
+    backdrop-filter: blur(20px);
+}
+
+.forgot-pass, .remember-me {
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+    margin-bottom: 20px; /* Space below forgot password link */
+}
+
+.forgot-pass a {
+    color: #62726a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+.remember-me label {
+    color: #62726a;
+    font-size: 14px;
+}
+
+.submit-btn {
+    display: flex;
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #354e51;
+    cursor: pointer;
+    transition: .3s;
+    color: #fff;
+}
+
+/* ====== SIDE PICTURE STYLES ====== */
+.side-picture {
+    flex: 1;
+    position: relative;
+}
+
+.side-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
